@@ -40,7 +40,7 @@
     .menu a:hover { color:var(--gold2); }
     .hero, section { position:relative; }
     .hero { padding:92px 0 76px; overflow:hidden; }
-    .hero-grid { display:grid; grid-template-columns:1.08fr .92fr; gap:36px; align-items:center; }
+    .hero-grid { display:grid; grid-template-columns:1.08fr .92fr; gap:36px; align-items:start; }
     .eyebrow { display:inline-block; padding:8px 14px; border:1px solid var(--line); border-radius:999px; color:var(--gold2); background:rgba(215,181,109,.08); font-size:13px; letter-spacing:.12em; }
     h1 { margin:18px 0 14px; font-size:clamp(34px, 5vw, 62px); line-height:1.14; letter-spacing:.04em; }
     .lead { max-width:760px; color:var(--muted); font-size:18px; }
@@ -57,7 +57,8 @@
     section { padding:74px 0; }
     .section-title { font-size:34px; margin:0 0 12px; color:var(--gold2); letter-spacing:.08em; }
     .section-desc { color:var(--muted); margin:0 0 28px; }
-    .seminar-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:center; }
+    .seminar-grid { display:grid; grid-template-columns:minmax(0, 1.15fr) minmax(320px, 420px); gap:28px; align-items:stretch; }
+    .contact-card, .qr-box { display:flex; flex-direction:column; justify-content:center; min-height:100%; }
     .contact-line { margin:12px 0; font-size:18px; }
     .note { margin-top:14px; font-size:14px; color:var(--muted); }
     .qr-box { text-align:center; }
@@ -139,11 +140,9 @@
         <span class="subbrand">MSForex技術學院</span>
       </a>
       <div class="menu">
-        <a href="#seminar">直播說明會</a>
         <a href="#courses">課程介紹</a>
         <a href="#features">課程特色</a>
         <a href="#about-ken">關於 Ken</a>
-        <a href="#pricing">分期方案</a>
         <a href="#contact">立即報名</a>
       </div>
     </div>
@@ -156,12 +155,8 @@
           <span class="eyebrow">隠れ｜MSForex技術學院</span>
           <h1>MSForex直播說明會報名</h1>
           <p class="lead">
-            直播說明會將完整介紹金融市場交易基礎班與進階班的學習架構、課程內容、學籍制度、分期規劃與培訓方向，讓你在正式投入之前，先看懂整體學習路線與合作方式。
+            直播說明會將完整介紹金融市場交易基礎班與進階班的學習架構、課程內容、學籍制度與培訓方向，讓你在正式投入之前，先看懂整體學習路線與合作方式。
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://forms.gle/UZSxoyZSUgg4FNZ8A" target="_blank" rel="noopener">立即填寫報名表</a>
-            <a class="btn btn-secondary" href="#courses">查看課程內容</a>
-          </div>
         </div>
 
         <div class="hero-card">
@@ -169,30 +164,7 @@
           <div class="stat-grid">
             <div class="stat"><div class="k">基礎班</div><div class="v">課程架構與學習路徑</div></div>
             <div class="stat"><div class="k">進階班</div><div class="v">續報制度與早鳥優惠</div></div>
-            <div class="stat"><div class="k">12 / 24</div><div class="v">分期方案說明</div></div>
             <div class="stat"><div class="k">1 對 1</div><div class="v">指導與狀態評估</div></div>
-          </div>
-          <div class="note">完成 Google 表單後，可再透過 LINE 或 Gmail 聯繫安排後續流程。</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="seminar" class="chart-bg">
-      <div class="container">
-        <h2 class="section-title">直播說明會報名資訊</h2>
-        
-        <div class="seminar-grid">
-          <div class="contact-card">
-            <div class="contact-line"><b>報名表名稱：</b>MSForex直播說明會報名表</div>
-            <div class="contact-line"><b>Google 報名表單連結：</b><br><a style="color:var(--gold2);word-break:break-all;" href="https://forms.gle/UZSxoyZSUgg4FNZ8A" target="_blank" rel="noopener">https://forms.gle/UZSxoyZSUgg4FNZ8A</a></div>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="https://forms.gle/UZSxoyZSUgg4FNZ8A" target="_blank" rel="noopener">前往報名表</a>
-            </div>
-            <div class="note">建議先填表，再由官方統一安排後續說明與課程諮詢。</div>
-          </div>
-          <div class="qr-box">
-            <img src="registration_qr.png" alt="MSForex直播說明會報名 QR Code">
-            <div class="note">掃描 QR Code 即可開啟 MSForex直播說明會報名表。</div>
           </div>
         </div>
       </div>
@@ -206,11 +178,9 @@
           <article class="card">
             <span class="tag">基礎班</span>
             <h3>金融市場交易基礎班</h3>
-            <div class="price"><div class="now">98,000</div><div class="old">原價 180,000</div></div>
             <div class="meta">
-              <div><b>學籍</b><br>1 年</div>
-              <div><b>12 期</b><br>約 8,167 / 月</div>
-              <div><b>24 期</b><br>約 4,083 / 月</div>
+              <div><b>基礎學程</b><br>30天高密度基礎學程＋課後學員影檔</div>
+              <div><b>贈送服務</b><br>11個月1對1實戰訓練與學員交流</div>
             </div>
             <ul class="clean">
               <li>全球金融市場運作與架構</li>
@@ -224,11 +194,9 @@
           <article class="card">
             <span class="tag">進階班</span>
             <h3>金融市場交易進階班</h3>
-            <div class="price"><div class="now">88,000</div><div class="old">原價 120,000</div></div>
             <div class="meta">
-              <div><b>學籍</b><br>1 年</div>
-              <div><b>12 期</b><br>約 7,333 / 月</div>
-              <div><b>24 期</b><br>約 3,667 / 月</div>
+              <div><b>進階班內容</b><br>進階班社群實盤研討＋不定期盤面規劃分享</div>
+              <div><b>附加服務</b><br>1對1重點邏輯與心態修正及交易規劃</div>
             </div>
             <ul class="clean">
               <li>進階交易策略與市場結構理解</li>
@@ -330,57 +298,21 @@
 
           <div class="about-box">
             <h3>十年的交易人生</h3>
-            <p>十年的交易人生，近五年開始把對帳單公開。</p>
+            <p>人生沒有那麼多的「再等等」，時機對了只要一次提前開始，你想要的人生就不再是「夢想」。業界最敢講真話學院，絕對比你在外面繞一圈走馬看花來得更有價值</p>
 
-            <div class="about-quote">「賺錢的帳單我給，獨門技術教給你還要等嗎？」</div>
+            <div class="about-quote">富在數術 不在勞身</div>
 
-            <p>人生沒有那麼多的「再等等」，時機對了只要一次提前開始，你想要的人生就不再是夢想。交易跟我合作，絕對比你在外面繞一圈、走馬看花來得更有價值。最貴的從來不是學費，而是時間成本。你想在 3、5 年後回頭看，才發現自己當初只是一直等待嗎？</p>
+            <p>交易給的門檻 100塊美金就可以創業<br>唯一需要在乎的 就是自己！</p>
 
-            <p><b>富在數術，不在勞身。</b></p>
+            <p>你一定有聽過華爾街之狼吧？<br>承襲華爾街國際操盤手技術<br>短時間內用最白話的方式掌握<br>工作的收入有限 時間也有限<br>成為那匹華爾街的狼<br>把你現今的收入翻倍再翻倍！</p>
 
-            <p>如果你是想要平靜工作過一生，那交易不適合你。交易給的門檻，就猶如創業。100 塊美金就可以創業，省下店面、人力、原料成本，唯一需要在乎的，就是自己。</p>
+            <div class="about-quote">立即填寫下列表單報名<br>帶你啟程成為自己的操盤手！</div>
 
-            <p>你一定有聽過華爾街之狼吧？承襲華爾街國際操盤手技術，短時間內用最白話的方式掌握。工作的收入有限，時間也有限，成為那匹華爾街的狼，把你現今的收入翻倍再翻倍。</p>
-
-            <div class="about-quote">立即填寫下列表單報名，帶你啟程成為國際操盤手！</div>
-
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="https://forms.gle/UZSxoyZSUgg4FNZ8A" target="_blank" rel="noopener">立即填寫下列表單報名</a>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="pricing" class="chart-bg">
-      <div class="container">
-        <h2 class="section-title">分期方案</h2>
-        
-        <div class="pricing-wrap">
-          <div>
-            <table>
-              <thead><tr><th>課程</th><th>原價</th><th>優惠價</th><th>12 期</th><th>24 期</th><th>學籍</th></tr></thead>
-              <tbody>
-                <tr><td>基礎班</td><td>180,000</td><td>98,000</td><td>約 8,167 / 月</td><td>約 4,083 / 月</td><td>1 年</td></tr>
-                <tr><td>進階班</td><td>120,000</td><td>88,000</td><td>約 7,333 / 月</td><td>約 3,667 / 月</td><td>1 年</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <aside class="aside">
-            <h4>報名與升級說明</h4>
-            <ul class="clean">
-              <li>基礎班與進階班皆可申請分期。</li>
-              <li>基礎班學員可於學籍結束前三個月續報進階班。</li>
-              <li>進階班續報可享早鳥優惠價 88,000。</li>
-              <li>實際分期條件依合作單位核准結果為準。</li>
-            </ul>
-            <div class="hero-actions" style="margin-top:20px;">
-              <a class="btn btn-primary" href="https://forms.gle/UZSxoyZSUgg4FNZ8A" target="_blank" rel="noopener">前往說明會報名</a>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
 
     <section id="contact" class="chart-bg">
       <div class="container">
@@ -396,7 +328,7 @@
               <a class="btn btn-primary" href="https://forms.gle/UZSxoyZSUgg4FNZ8A" target="_blank" rel="noopener">前往填寫說明會報名表</a>
               <a class="btn btn-secondary" href="mailto:kenforexoccupy91@gmail.com">寄送 Gmail 聯繫</a>
             </div>
-            <div class="note">建議流程：先填寫說明會報名表 → 等待聯繫 → 參與直播說明會 → 了解基礎班與進階班 → 規劃正式報名與分期安排。</div>
+
           </div>
           <div class="qr-box">
             <img src="registration_qr.png" alt="MSForex直播說明會報名 QR Code">
@@ -412,7 +344,7 @@
       <div class="brand">隠れ</div>
       <div style="margin-top:4px;color:var(--muted);letter-spacing:.12em;">MSForex技術學院</div>
       <div style="margin-top:10px;">© 2026 隠れ 版權所有</div>
-      <div class="disclaimer">本課程為教育訓練內容，僅提供金融市場與交易知識、學習架構與實務技巧。</div>
+      <div class="disclaimer">本課程為教育訓練內容，僅提供金融市場與交易知識、學習架構與實務技巧，不構成投資建議，亦不保證任何收益結果。</div>
     </div>
   </footer>
 </body>
